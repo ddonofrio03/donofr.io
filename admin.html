@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — DONOFR.IO</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">DONOFR.IO<small>A family of builders</small></a>
+    <nav class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#team">Team</a>
+      <a href="thoughts.html">Thoughts</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="btn secondary" href="thoughts.html">Blog</a>
+  </div>
+</header>
+
+<div id="admin-root" class="container" style="padding:52px 0 80px">
+  <div class="page-hero" style="padding-top:0">
+    <div class="eyebrow">Admin</div>
+    <h1>Post editor</h1>
+    <p class="lead">This is a lightweight GitHub Pages-friendly admin. Sign in with a magic link using Supabase Auth, then publish posts to the <code>posts</code> table.</p>
+  </div>
+  <div class="panel" style="margin-bottom:20px">
+    <div class="form-row">
+      <label>Email for magic link
+        <input id="email" type="email" placeholder="you@example.com" value="ddonofrio@thecaseygroup.us">
+      </label>
+    </div>
+    <div class="actions">
+      <button class="btn" id="login-btn" type="button">Email me a sign-in link</button>
+      <button class="btn secondary" id="signout-btn" type="button" style="display:none">Sign out</button>
+    </div>
+    <p id="auth-state" class="small" style="margin-top:12px">Not signed in.</p>
+  </div>
+  <form id="post-form" style="display:none">
+    <div class="admin-grid">
+      <div class="form-row">
+        <label>Title<input id="title" type="text" placeholder="Post title"></label>
+        <label>Slug<input id="slug" type="text" placeholder="leave blank to auto-generate"></label>
+        <label>Author<input id="author" type="text" placeholder="Dave D’Onofrio"></label>
+        <label>Cover image URL<input id="cover_image" type="url" placeholder="https://..."></label>
+        <label>Excerpt<textarea id="excerpt" placeholder="Short summary for the post card"></textarea></label>
+      </div>
+      <div class="form-row">
+        <label>Post body (HTML)<textarea id="content_html" placeholder="<p>Your post here...</p>"></textarea></label>
+        <label><input id="published" type="checkbox" checked style="width:auto;margin-right:10px">Publish immediately</label>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn" id="save-post-btn" type="button">Save post</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <div class="container">
+    <div>DONOFR.IO</div>
+    <div class="small">A family of builders. Built as a static GitHub Pages site with an optional Supabase-powered blog admin.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
