@@ -141,117 +141,75 @@ button {
 
 .hero {
   position: relative;
-  min-height: 100svh;
-  min-height: 100vh;
-  background: #000;
+  height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.hero-media {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
+/* VIDEO (this is what fixes Chrome issues) */
 .hero-video-shell {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  background: #000;
+  z-index: 0;
 }
 
-.hero-video-shell iframe {
+.hero-video-native {
   position: absolute;
   top: 50%;
   left: 50%;
   width: max(177.78vh, 140vw);
   height: max(56.25vw, 140vh);
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%) scale(1.18);
-  border: 0;
+  transform: translate(-50%, -50%) scale(1.2);
+  object-fit: cover;
   pointer-events: none;
-  filter: saturate(1.05) contrast(1.02) brightness(0.72);
-  will-change: transform;
-  backface-visibility: hidden;
+  filter: brightness(0.7);
 }
 
+/* Overlay */
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.34) 12%, rgba(0, 0, 0, 0.42) 48%, rgba(0, 0, 0, 0.54) 100%),
-    radial-gradient(circle at center, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.24) 70%, rgba(0, 0, 0, 0.4) 100%);
+  background: rgba(0,0,0,0.45);
   z-index: 1;
 }
 
-.hero-inner {
+/* Content */
+.hero-content {
   position: relative;
   z-index: 2;
-  min-height: 100svh;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 110px;
-  padding-bottom: 90px;
-}
-
-.hero-content {
-  width: 100%;
-  max-width: 1120px;
-  text-align: center;
-  color: #fff;
-  margin-top: 20px;
+  max-width: 900px;
+  padding: 0 20px;
 }
 
 .hero-eyebrow {
-  font-size: clamp(3.3rem, 7.6vw, 6.4rem);
-  line-height: 0.96;
-  font-weight: 900;
-  letter-spacing: -0.03em;
-  margin: 0 auto 34px;
-  text-transform: none;
-  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
-.hero-rule {
-  width: 310px;
-  max-width: 45%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.68);
-  margin: 0 auto 36px;
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
-.hero-subtext {
-  max-width: 980px;
-  margin: 0 auto 54px;
-  font-size: clamp(1.1rem, 2vw, 1.05rem);
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.9);
+.hero-sub {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 .hero-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 355px;
-  min-height: 54px;
-  padding: 15px 26px;
-  border: 2px solid rgba(255, 255, 255, 0.85);
-  background: rgba(255, 255, 255, 0.02);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
-}
-
-.hero-button:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: #fff;
-  transform: translateY(-1px);
+  display: inline-block;
+  padding: 14px 28px;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
 }
 
 /* GENERAL BUTTONS */
