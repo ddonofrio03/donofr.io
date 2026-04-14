@@ -31,31 +31,40 @@
           <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
         </svg>
       </a>
+
       <button class="nav-icon menu-icon" type="button" aria-label="Menu">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </div>
 </header>
 
 <section class="hero">
-  <div class="hero-video-shell">
-    <video class="hero-video-native" autoplay muted loop playsinline>
-      <source src="DataFlow.mp4" type="video/mp4">
+  <div class="hero-media" aria-hidden="true">
+    <img
+      class="hero-fallback"
+      src="/meeting.jpg"
+      alt=""
+    >
+
+    <video class="hero-video-native" autoplay muted loop playsinline preload="auto">
+      <source src="/DataFlow.mp4" type="video/mp4">
     </video>
+
+    <div class="hero-overlay"></div>
   </div>
 
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-    <h2 class="hero-eyebrow">CREATE. AMAZE. INSPIRE.</h2>
-    <h1 class="hero-title">
-      We bridge the gap between your business and the public.
-    </h1>
-    <p class="hero-sub">
-      We’re the D’Onofrios — a family of builders, problem-solvers, and straight shooters.
-    </p>
-    <a href="#about" class="hero-button">Learn More About Who We Are</a>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Create. Amaze. Inspire.</div>
+      <div class="hero-rule"></div>
+      <p class="hero-subtext">
+        We’re the D’Onofrio's — a family of builders, problem-solvers, and straight shooters.
+      </p>
+      <a class="hero-button" href="#about">Learn More About Who We Are</a>
+    </div>
   </div>
 </section>
 
@@ -80,7 +89,7 @@
     </div>
 
     <div class="card">
-      <img src="https://donofr.io/wp-content/uploads/2017/09/samuel-ferrara-8N6TUVrWj38-unsplash-2-1-1024x683.jpg" alt="Modern architecture">
+      <img src="/mountain.jpg" alt="Modern architecture">
     </div>
   </div>
 </section>
@@ -102,7 +111,7 @@
     <div class="grid grid-3">
       <article class="card">
         <div class="service-media">
-          <img src="https://donofr.io/wp-content/uploads/2025/12/MIT-Probalistic-Control-compressed_0.gif" alt="AI solutions">
+          <img src="/service-ai.gif" alt="AI solutions">
         </div>
         <div class="card-body">
           <div class="kicker">Code & AI-driven solutions</div>
@@ -113,7 +122,7 @@
 
       <article class="card">
         <div class="service-media">
-          <img src="https://donofr.io/wp-content/uploads/2025/12/CAC-Meeting.jpg" alt="Message and community">
+          <img src="/meeting.jpg" alt="Message and community">
         </div>
         <div class="card-body">
           <div class="kicker">Connecting your message</div>
@@ -124,7 +133,7 @@
 
       <article class="card">
         <div class="service-media">
-          <img src="https://donofr.io/wp-content/uploads/2025/12/istockphoto-953782406-612x612-1.jpg" alt="Media and marketing leadership">
+          <img src="/service-marketing.jpg" alt="Media and marketing leadership">
         </div>
         <div class="card-body">
           <div class="kicker">Media & marketing leadership</div>
@@ -173,7 +182,7 @@
     <div class="grid grid-3">
       <article class="card">
         <div class="team-photo">
-          <img src="https://donofr.io/wp-content/uploads/2025/12/1763774761098.jpeg" alt="David D’Onofrio">
+          <img src="/david.jpg" alt="David D’Onofrio">
         </div>
         <div class="card-body">
           <h3>David D’Onofrio</h3>
@@ -184,7 +193,7 @@
 
       <article class="card">
         <div class="team-photo">
-          <img src="https://donofr.io/wp-content/uploads/2025/12/1517588302320.jpeg" alt="Bill D’Onofrio">
+          <img src="/bill.jpg" alt="Bill D’Onofrio">
         </div>
         <div class="card-body">
           <h3>Bill D’Onofrio</h3>
@@ -195,7 +204,7 @@
 
       <article class="card">
         <div class="team-photo">
-          <img src="https://donofr.io/wp-content/uploads/2025/12/1756089447397.jpeg" alt="Ryan D’Onofrio">
+          <img src="/ryan.jpg" alt="Ryan D’Onofrio">
         </div>
         <div class="card-body">
           <h3>Ryan D’Onofrio</h3>
@@ -219,7 +228,7 @@
 
     <div id="latest-posts" class="grid grid-2"></div>
 
-    <div class="actions" style="margin-top:24px">
+    <div class="actions center-actions" style="margin-top:24px">
       <a class="btn secondary" href="thoughts.html">View all posts</a>
       <a class="btn secondary" href="admin.html">Admin</a>
     </div>
