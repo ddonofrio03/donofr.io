@@ -3,7 +3,7 @@ import { getSortedPostsMetadata } from "@/lib/posts";
 
 const team = [
   { name: "David D'Onofrio", role: "Lead Talker", image: "/images/david.jpg", bio: "Dave has spent decades in high-pressure conversations with millions of dollars on the line. He helps clients shape the message and move tough discussions in the right direction." },
-  { name: "Bill D'Onofrio", role: "Lead Thinker", image: "/images/bill.jpg", bio: "Bill brings decades of experience leading teams and finding the path that fits a client's needs, budget, and goals." },
+  { name: "Bill D'Onofrio", role: "Lead Listener", image: "/images/bill.jpg", bio: "Bill brings decades of experience leading teams and finding the path that fits a client's needs, budget, and goals." },
   { name: "Ryan D'Onofrio", role: "Lead Creative", image: "/images/ryan.jpg", bio: "Ryan combines AI engineering, creative thinking, and technical problem-solving to help clients find smart solutions and move ideas forward." },
   { name: "Melissa Chelius", role: "Lead Marketer", image: "/images/missy.jpg", bio: "Melissa knows how to get the right message in front of the right people. She helps clients build awareness and turn attention into action." },
   { name: "Alex Chelius", role: "Lead Strategist", image: "/images/alex.jpg", bio: "Alex works across teams to keep projects moving and ideas sharp. He helps turn plans into clear, steady progress." },
