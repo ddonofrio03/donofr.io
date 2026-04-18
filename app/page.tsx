@@ -10,6 +10,7 @@ const team = [
   { name: "Allison Triefler", role: "Lead Analyst", image: "/images/alli.jpg", bio: "Allison turns data into clear direction. She helps clients understand what's working, what's not, and what to do next." },
   { name: "Nick Triefler", role: "Lead Sales", image: "/images/nick.jpg", bio: "Nick builds relationships and gets deals across the finish line. He helps clients connect, close, and grow." },
   { name: "TJ D'Onofrio", role: "Lead Coordinator", image: "/images/tj.jpg", bio: "TJ keeps everything organized and on track. He makes sure the details are handled so nothing slips through." },
+  { name: "Ducky D'Onofrio", role: "Lead Connector", image: "/images/ducky.png", bio: "Ducky brings out the best in people. She asks the right questions, listens deeply, and helps others open up in a real and meaningful way." },
 ];
 
 function formatDate(dateStr: string) {
