@@ -3,14 +3,15 @@ import { getSortedPostsMetadata } from "@/lib/posts";
 
 const team = [
   { name: "David D'Onofrio", role: "Lead Talker", image: "/images/david.jpg", bio: "Dave has spent decades in high-pressure conversations with millions of dollars on the line. He helps clients shape the message and move tough discussions in the right direction." },
+  { name: "Stephie D'Onofrio", role: "Lead Events", image: "/images/stephie.jpg", bio: "The engine behind flawless events. Hyper-organized, detail-driven, and over-the-top in all the right ways." },
   { name: "Bill D'Onofrio", role: "Lead Listener", image: "/images/bill.jpg", bio: "Bill brings decades of experience leading teams and finding the path that fits a client's needs, budget, and goals." },
   { name: "Ryan D'Onofrio", role: "Lead Creative", image: "/images/ryan.jpg", bio: "Ryan combines AI engineering, creative thinking, and technical problem-solving to help clients find smart solutions and move ideas forward." },
+  { name: "Ducky D'Onofrio", role: "Lead Connector", image: "/images/ducky.png", bio: "Ducky brings out the best in people. She asks the right questions, listens deeply, and helps others open up in a real and meaningful way." },
   { name: "Melissa Chelius", role: "Lead Marketer", image: "/images/missy.jpg", bio: "Melissa knows how to get the right message in front of the right people. She helps clients build awareness and turn attention into action." },
   { name: "Alex Chelius", role: "Lead Strategist", image: "/images/alex.jpg", bio: "Alex works across teams to keep projects moving and ideas sharp. He helps turn plans into clear, steady progress." },
   { name: "Allison Triefler", role: "Lead Analyst", image: "/images/alli.jpg", bio: "Allison turns data into clear direction. She helps clients understand what's working, what's not, and what to do next." },
   { name: "Nick Triefler", role: "Lead Sales", image: "/images/nick.jpg", bio: "Nick builds relationships and gets deals across the finish line. He helps clients connect, close, and grow." },
   { name: "TJ D'Onofrio", role: "Lead Coordinator", image: "/images/tj.jpg", bio: "TJ keeps everything organized and on track. He makes sure the details are handled so nothing slips through." },
-  { name: "Ducky D'Onofrio", role: "Lead Connector", image: "/images/ducky.png", bio: "Ducky brings out the best in people. She asks the right questions, listens deeply, and helps others open up in a real and meaningful way." },
 ];
 
 function formatDate(dateStr: string) {
