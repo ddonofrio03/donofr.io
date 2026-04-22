@@ -3,7 +3,7 @@ import { getSortedPostsMetadata } from "@/lib/posts";
 
 const team = [
   { name: "David D'Onofrio", role: "Lead Talker", image: "/images/david.jpg", bio: "Dave has spent decades in high-pressure conversations with millions of dollars on the line. He helps clients shape the message and move tough discussions in the right direction." },
-  { name: "Stephie D'Onofrio", role: "Lead Events", image: "/images/stephie.jpg", bio: "The engine behind flawless events. Hyper-organized, detail-driven, and over-the-top in all the right ways." },
+  { name: "Stephie D'Onofrio", role: "Lead Events", image: "/images/stephie.jpg", bio: "Stephie is the engine behind flawless events. She plans it, tracks it, perfects it—and somehow makes it all look easy! She's over-the-top in all the right ways." },
   { name: "Bill D'Onofrio", role: "Lead Listener", image: "/images/bill.jpg", bio: "Bill brings decades of experience leading teams and finding the path that fits a client's needs, budget, and goals." },
   { name: "Ryan D'Onofrio", role: "Lead Creative", image: "/images/ryan.jpg", bio: "Ryan combines AI engineering, creative thinking, and technical problem-solving to help clients find smart solutions and move ideas forward." },
   { name: "Ducky D'Onofrio", role: "Lead Connector", image: "/images/ducky.png", bio: "Ducky brings out the best in people. She asks the right questions, listens deeply, and helps others open up in a real and meaningful way." },
@@ -12,6 +12,8 @@ const team = [
   { name: "Allison Triefler", role: "Lead Analyst", image: "/images/alli.jpg", bio: "Allison turns data into clear direction. She helps clients understand what's working, what's not, and what to do next." },
   { name: "Nick Triefler", role: "Lead Sales", image: "/images/nick.jpg", bio: "Nick builds relationships and gets deals across the finish line. He helps clients connect, close, and grow." },
   { name: "TJ D'Onofrio", role: "Lead Coordinator", image: "/images/tj.jpg", bio: "TJ keeps everything organized and on track. He makes sure the details are handled so nothing slips through." },
+  { name: "The Future", role: "Lead Tomorrow", image: "/images/future.jpg", bio: "It is never too early to start thinking about what comes next! Skills developing...come back soon for more!" },
+
 ];
 
 function formatDate(dateStr: string) {
