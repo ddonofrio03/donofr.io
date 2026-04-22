@@ -13,7 +13,7 @@ const team = [
   { name: "Allison Triefler", role: "Lead Analyst", image: "/images/alli.jpg", bio: "Allison turns data into clear direction. She helps clients understand what's working, what's not, and what to do next." },
   { name: "Nick Triefler", role: "Lead Sales", image: "/images/nick.jpg", bio: "Nick builds relationships and gets deals across the finish line. He helps clients connect, close, and grow." },
   { name: "TJ D'Onofrio", role: "Lead Coordinator", image: "/images/tj.jpg", bio: "TJ keeps everything organized and on track. He makes sure the details are handled so nothing slips through." },
-
+{ name: "The Future", role: "Lead Tomorrow", image: "/images/soon.jpg", bio: "It is never too early to start thinking about what comes next! Skills developing...come back soon for more!" },
 ];
 
 function formatDate(dateStr: string) {
