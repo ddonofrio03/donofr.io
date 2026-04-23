@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getSortedPostsMetadata } from "@/lib/posts";
 
 const team = [
-  { name: "David D'Onofrio", role: "Lead Talker", image: "/images/david.jpg", bio: "Dave has spent decades in high-pressure conversations with millions of dollars on the line. He helps clients shape the message and move tough discussions in the right direction." },
+  { name: "David D'Onofrio", role: "Lead Talker", image: "/images/dave2.jpg", bio: "Dave has spent decades in high-pressure conversations with millions of dollars on the line. He helps clients shape the message and move tough discussions in the right direction." },
   { name: "Stephie D'Onofrio", role: "Lead Events", image: "/images/stephie.jpg", bio: "Stephie is the engine behind flawless events. She plans it, tracks it, perfects it—and somehow makes it all look easy! She's over-the-top in all the right ways." },
   { name: "Bill D'Onofrio", role: "Lead Listener", image: "/images/bill.jpg", bio: "Bill brings decades of experience leading teams and finding the path that fits a client's needs, budget, and goals." },
    { name: "Donna D'Onofrio", role: "Lead Flow", image: "/images/soon.jpg", bio: "Donna guides with devotion and heart. Keeps life, family, and business in rhythm—and gets it all done in two minutes." },
